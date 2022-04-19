@@ -1,0 +1,126 @@
+/* Header */
+
+header {
+    width: 100%;
+    background-color: $light_two;
+    overflow: hidden;
+}
+
+/* End Header*/
+
+/* Navbar */
+
+nav {
+    width: 100%;
+    position: relative;
+    z-index: 50;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 7rem;
+
+        .nav__logo {
+            width: 80px;
+            display: flex;
+            align-items: center;
+        };
+
+        .nav__links {
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+
+                li {
+                    display: flex;
+
+                    a {
+                        display: inline-block;
+                        padding: 1rem;
+                        color: $dark_one;
+                        font-size: 1.1rem;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        line-height: 1;
+                        transition: 0.3s;
+
+                        &:hover {
+                            color: $blue_one;
+                        };
+
+                        &.active {
+                            background: $main_color;
+                            color: $light_one;
+                            border-radius: 2rem;
+                            font-size: 1rem;
+                            padding: 0.8rem 1.6rem;
+                            margin-left: 1rem;
+
+                            &:hover {
+                                background: $blue_one;
+                            };
+                        };
+
+                    };
+                };
+            };
+        };
+    };
+};
+
+/* End Navbar */
+
+/* Header Content */
+
+.header__content{
+    .container {
+        &.grid__2{
+            grid-template-columns: 2.5fr 3.5fr;
+            min-height: calc(100vh - 7rem);
+            padding-bottom: 2.5rem;
+            text-align: left;            
+        };
+
+        .column__1{           
+            .header__title{
+                font-size: 3.8rem;
+                line-height: 1.2;
+                color: $dark_one;
+            };
+
+            .text{
+                margin: 2.15rem 0;
+            };
+
+            .btn{
+                display: inline-block;
+                padding: 0.85rem 2.5rem;
+                background: $main_color;
+                border-radius: 2rem;
+                color: $light_one;
+                font-size: 1.05rem;
+                text-transform: uppercase;
+                font-weight: 500;
+                transition: 0.3s;
+
+                &:hover {
+                    background: $blue_one;
+                };
+            };
+        };
+
+        .image{
+            .img__element{
+                max-width: 750px
+            };
+        };
+    };
+};
+
+/* End Header Content */
